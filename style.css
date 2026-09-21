@@ -201,10 +201,10 @@ nav.scrolled {
 }
 
 .brand-logo-img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    flex-shrink: 0;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-links {
@@ -264,15 +264,22 @@ nav.scrolled {
     transform: scale(.97);
 }
 
+/* Nav "Start a Project" Button Customization */
+.nav-cta .btn,
 .btn-gold {
-    background: linear-gradient(180deg, #E7BE73, #B98A2F);
-    color: #1F150C;
-    box-shadow: 0 10px 30px rgba(217, 168, 94, .22);
+    background: transparent !important;
+    color: var(--white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    box-shadow: none !important;
 }
 
+.nav-cta .btn:hover,
 .btn-gold:hover {
+    border-color: var(--gold) !important;
+    background: rgba(217, 168, 94, 0.08) !important;
+    color: var(--white) !important;
     transform: translateY(-2px);
-    box-shadow: 0 16px 42px rgba(217, 168, 94, .35);
+    box-shadow: 0 0 15px rgba(217, 168, 94, 0.25) !important;
 }
 
 .btn-ghost {
@@ -337,7 +344,7 @@ nav.scrolled {
 header {
     position: relative;
     z-index: 1;
-    padding: 150px 0 40px;
+    padding: 110px 0 40px;
 }
 
 h1.hero {
@@ -345,7 +352,7 @@ h1.hero {
     font-size: clamp(40px, 7.2vw, 100px);
     line-height: 0.95;
     letter-spacing: -.015em;
-    margin: -28px 0 6px;
+    margin: 0 0 6px;
     text-transform: uppercase;
 }
 
@@ -798,12 +805,14 @@ section.alt {
     justify-content: center;
 }
 
+/* Suit and Math Red Background */
 .p-visual.red {
-    background: #f6f1e7;
+    background: #dc3545;
 }
 
+/* Digit Blue Background */
 .p-visual.blue {
-    background: #072a5f
+    background: #0d6efd;
 }
 
 .p-visual.edu {
@@ -1546,7 +1555,7 @@ footer {
     }
 
     .brand-logo-img {
-        height: 32px;
+        height: 38px;
     }
 
     .hero-sub {
